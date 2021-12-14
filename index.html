@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>weatherinfoaplication</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+             <div class="col-1">
+                 <div class="left">
+             <ul>
+                <li><button>&#9776;</button></li>
+                <li><button>&#128449;</button></li>
+                <li><button>&#9729;</button></li>
+                <li><button ><i class="fas fa-trash"></i></button></li>
+                <li><button style="background-color: red;" class="bell"><i class="fa fa-bell" style="color:white" ></i></button></li>
+                <li><button class="user"><i class="fas fa-user" style="color:#2e49b3;"></i></button></li>
+              </ul>
+                 </div>
+             </div>
+          <div class="col-7">
+              <div class="middle">
+                <button class="searchclick" type="submit" value="submit"><i class="fas fa-search" style="color: #fff;"></i></button>
+                <input class="search" placeholder="search" name="search" id="cityName" type="text" autofocus>
+               <div class="row">
+                   <div class="col-11">
+                        <h1>Weather <b style="font-weight: 200;">Forecast</b></h1>
+                    </div>
+                   <div class="col-1">
+                       <i class="fas fa-cog" style="color: #fff;"></i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                       <!-- <p>hiii</p> -->
+                    </div>
+                    <div class="col-3">
+                        
+  
+                    </div>
+                    <div class="col-3">
+                           
+                    </div>
+                </div>  
+                <div class="row">
+                    <div class="col-6">
+                       <!-- <p>hiii</p> -->
+                    </div>
+                    <div class="col-3">
+                         <div class="temp1">
+                            <p ><i class="fas fa-thermometer-half" style="color: white; font-size: 20px;">
+                            </i><p class="temp"></p></p>
+                            <p >&#xb0;C</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="prep1">
+                            <p ><i class="fas fa-tint" style="color: white; font-size: 20px;">
+                            </i><p class="prep"></p></p>
+                            <p >%</p>
+                    </div>
+                </div>  
+              </div> 
+             </div>        
+          </div>
+          <div class="col-4">
+              <div class="side">
+                 <div class="weather">
+                     <div class="row">
+                       <div class=" col-3" style="background-color: #77b4f1;">
+                            <img class="icon" src="" id="iconimage" style="text-align: center;margin-top: 10%; color: white; ">
+                       </div>
+                    </div>
+                       <div class="desc">
+                           <h3 class="desc1">It's hot today</h3>
+                           <p class="desc2">be sure to grab a bottle of cold water</p>
+                       </div>
+                 </div>
+                 <div class="info">
+                      <h3>INFO</h3>
+                      <button><i class="fas fa-wind" style="color: white;"></i></button>
+                      <button><i class="fas fa-tint" style="color: white;"></i></button>
+                      <button><i class="fas fa-thermometer-half" style="color: white;"></i></button>
+                      <button style="border-style: dotted; display: block;"><i class="fas fa-plus" style="color: white; display: block;"></i></button>
+                 </div>
+                 <div class="city">
+                      <h3>city</h3>
+                      <div class="city1">
+                      <button><i class="fas fa-cloud-showers-heavy" style="color: white;"></i></button>
+                      <p style="font-size: 12px;background-color: #3d94eb;" >Paris &#xb0;C</p>
+                    </div>
+                    <div class="city2">
+                      <button><i class="fas fa-umbrella" style="color:white"></i></button>
+                      <p style="font-size: 12px; background-color: #3d94eb;">London &#xb0;C</p>
+                    </div>
+                    <div class="extra">
+                    <button style="border-style: dotted; display: block;"><i class="fas fa-plus" style="color: white; display: block;"></i></button>
+                    </div> 
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+
+        <script src="app.js"></script>
+    </body>
+
+</html>
