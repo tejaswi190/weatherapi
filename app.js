@@ -9,7 +9,7 @@ var desc2 = document.querySelector('.desc2')
 
 
 searchclick.addEventListener('click',function(){
-  fetch('https://api.openweathermap.org/data/2.5/weather?q='+search.value+'&appid=36bb7c2312b860aa3a0b8adcd45e8215&units=metric')
+  fetch('http://api.openweathermap.org/data/2.5/weather?q='+search.value+'&appid=36bb7c2312b860aa3a0b8adcd45e8215&units=metric')
       .then(response => response.json())
     //   .then(data => console.log(data))
       .then(data => {
