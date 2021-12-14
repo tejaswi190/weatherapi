@@ -9,7 +9,7 @@ var desc2 = document.querySelector('.desc2')
 
 
 searchclick.addEventListener('click',function(){
-  fetch('http://api.openweathermap.org/data/2.5/weather?q='+search.value+'&appid=36bb7c2312b860aa3a0b8adcd45e8215&units=metric')
+  fetch('https://api.openweathermap.org/data/2.5/weather?q='+search.value+'&appid=36bb7c2312b860aa3a0b8adcd45e8215&units=metric')
       .then(response => response.json())
     //   .then(data => console.log(data))
       .then(data => {
@@ -23,7 +23,7 @@ searchclick.addEventListener('click',function(){
         //   icon.innerHTML = iconvalue;
           desc1.innerHTML = desc1value;
           desc2.innerHTML = desc2value;
-          document.getElementById('iconimage').src='http://openweathermap.org/img/wn/'+iconvalue+'@2x.png'
+          document.getElementById('iconimage').src='https://openweathermap.org/img/wn/'+iconvalue+'@2x.png'
       })
 
     .catch(err => alert("wrong city entered"))
